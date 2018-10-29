@@ -53,7 +53,7 @@ function getGif(){
   var url = 'https://api.giphy.com/v1/gifs/search?api_key=' +key
     + '&q=' + topic 
     + '&limit='+limit 
-    + '&offset=' + offset*10+1;
+    + '&offset=' + parseInt(offset*10+1)
     + '&rating=G&lang=en';
     $.ajax({
         url: url,
